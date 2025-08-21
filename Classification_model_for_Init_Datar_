@@ -1,15 +1,1 @@
-Create Classification_model_for_Init_Datar_
-In this file, we are working on Init_Data to find out the best fit machine learning model to segment according Name and Code based on different text variables. 
 
-The process of this particular workflow is:
-- Getting to know the data description, purpose and context, etc
-- Data exploration
-- Cleaning data ( filling null values, drop severe null columns, clean text to handle punctuation,etc)
-- Analysing overlap columns (due to its high repetitiveness among variables) then merge the overlapped features
-- Splitting the given dataset into Testing dataset and Training dataset with 2 target classification
-- Vectorising the text coumnd on training dataset
-- Models Training
-- Fine-tuning the model (to be added)
-- Final Evaluation then find the Best Model
-- Performance Report (to be added)
-- Deployment (tobe added)
