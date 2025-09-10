@@ -1,0 +1,10 @@
+Database Connection Settings:
+
+Host: 4.197.251.181 (the server’s public IP)
+Port: 5432
+Database: postgres
+
+Username: postgres
+Password: Inn0v_tion 
+
+Click "Test Connection" → If successful, click "Finish".

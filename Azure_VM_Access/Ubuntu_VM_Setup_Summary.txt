@@ -1,0 +1,47 @@
+# Ubuntu VM Setup Summary
+
+## **System Information**
+- **Hostname:** innaaedppvm01
+- **Public IP:** 4.197.251.181
+- **Username:** azvmadm_inbbl
+- **OS:** Ubuntu (Check: `lsb_release -a`)
+- **Kernel:** (Check: `uname -r`)
+- **Memory Usage:** (Check: `free -m`)
+- **Disk Usage:** (Check: `df -h`)
+- **Network:** (Check: `ip a`)
+- **Speed Test:** (Check: `speedtest-cli`)
+
+## **Installed Applications**
+- **File Manager:** Nemo (`nemo`)
+- **Web Browsers:** Firefox (`firefox`), Chrome (`google-chrome`)
+- **Database Tools:** PostgreSQL (`psql`), dBeaver (`dbeaver`)
+- **Development:** Visual Studio Code (`code`)
+- **Graphics & 3D:** Blender (`blender`)
+- **Email Client:** Thunderbird (`thunderbird`)
+- **Web Server:** Nginx (`nginx`)
+- **Remote Access:** xRDP (`xrdp`)
+- **System Management:** Webmin (`webmin`)
+- **File Sharing:** Samba (`smbd`, `nmbd`)
+- **SSH Server:** OpenSSH (`ssh`)
+
+## **Enabled & Running Services**
+```sh
+systemctl status nginx
+systemctl status webmin
+systemctl status smbd
+systemctl status xrdp
+systemctl status postgresql
+```
+(Ensure each service is `active (running)`).
+
+## **Configuration Notes**
+- **PostgreSQL Remote Access:** Configure in `/etc/postgresql/16/main/postgresql.conf`
+- **Webmin Access:** `https://4.197.251.181:10000`
+- **Samba Ports Opened:** 139, 445 (`sudo ufw allow 139 && sudo ufw allow 445`)
+- **Firewall (UFW):** Adjust settings as needed (`sudo ufw status`)
+
+## **Useful Commands**
+- **Restart a Service:** `sudo systemctl restart <service>`
+- **Check System Info:** `lsb_release -a`, `df -h`, `free -m`
+- **Network Speed Test:** `speedtest-cli`
+- **Check Open Ports:** `netstat -tulnp`
