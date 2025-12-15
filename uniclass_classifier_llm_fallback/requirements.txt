@@ -1,0 +1,13 @@
+# --- Core Libraries for Data Handling and BIM ---
+pandas>=2.1.0
+openpyxl>=3.1.2        # Required by pandas to read/write .xlsx files
+ifcopenshell>=0.6.0    # Core library for IFC parsing (version may need adjustment based on install method)
+
+# --- Machine Learning Libraries for Embeddings and Similarity ---
+sentence-transformers>=2.2.2  # Main library for model encoding and utility functions
+torch>=2.0.0                  # PyTorch is the underlying framework required by Sentence-Transformers
+numpy>=1.25.0                 # Fundamental array manipulation library
+scipy>=1.11.0                 # Used by Sentence-Transformers for utility functions
+
+# --- Utility for Command-Line Arguments ---
+argparse # This library is part of the standard Python library, but including it here clarifies its use.
