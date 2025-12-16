@@ -3,6 +3,7 @@
 A hybrid pipeline for classifying IFC elements into Uniclass Ss and Ef codes.
 
 ## Installation
+```bash
 
 # Clone the repository
 git clone
